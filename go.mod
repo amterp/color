@@ -1,4 +1,4 @@
-module github.com/fatih/color
+module github.com/amterp/color
 
 go 1.24.1
 

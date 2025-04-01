@@ -10,7 +10,7 @@ suits you.
 ## Install
 
 ```
-go get github.com/fatih/color
+go get github.com/amterp/color
 ```
 
 ## Examples
