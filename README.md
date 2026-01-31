@@ -179,6 +179,10 @@ c.Println("This prints again cyan...")
 To output color in GitHub Actions (or other CI systems that support ANSI colors), make sure to set `color.NoColor = false` so that it bypasses the check for non-tty output streams. 
 
 
+## Development
+
+This project uses [Kan](https://github.com/amterp/kan) for task tracking. Run `kan serve` to view the board.
+
 ## Credits
 
 * [Fatih Arslan](https://github.com/fatih)

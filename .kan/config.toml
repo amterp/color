@@ -1,0 +1,9 @@
+kan_schema = "project/1"
+id = "p_I4J63qRW"
+name = "color"
+
+[favicon]
+  background = "#f59e0b"
+  icon_type = "letter"
+  letter = "C"
+  emoji = ""

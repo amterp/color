@@ -1,0 +1,12 @@
+{
+  "_v": 1,
+  "alias": "add-ansi-fallback-support-for",
+  "alias_explicit": false,
+  "created_at_millis": 1769895658737,
+  "creator": "Alexander Terp",
+  "description": "Allow users to specify an optional ANSI 16 fallback color when defining RGB colors. This addresses terminals that don't support 24-bit true color (notably macOS Terminal.app, some remote sessions).\n\n## Behavior\n- Fallback is optional—if not specified, RGB simply won't render on unsupported terminals\n- Detection via COLORTERM env var: if set to 'truecolor' or '24bit', use RGB; otherwise use fallback\n- Keep it simple: just ANSI 16 fallback, no 256-color intermediate tier\n\n## API Ideas\n- `RGBWithFallback(r, g, b, fallback Attribute)`\n- Or chainable: `RGB(r, g, b).Fallback(FgRed)`\n- Similar for background: `BgRGBWithFallback` or `BgRGB().Fallback()`\n\n## Rationale\nExplicit fallback \u003e automatic nearest-color mapping because:\n- Semantic meaning matters more than perceptual similarity (error red should fall back to FgRed, not whatever algorithm picks)\n- Predictable behavior—users know exactly what they'll get\n- Simpler implementation (no color-distance algorithms)",
+  "id": "a_I4KQL0kP",
+  "title": "Add ANSI fallback support for RGB colors",
+  "type": "enhancement",
+  "updated_at_millis": 1769895658737
+}
